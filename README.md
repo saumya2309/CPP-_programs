@@ -204,7 +204,11 @@ public:
             for (int j = 0; j < 3; j++)
                 if (board[i][j] == '0' + pos) {
                     board[i][j] = turn;
-                    turn = (turn == 'X') ? 'O' : 'X';
+                    if (turn == 'X') {
+                        turn = 'O';
+                    else
+                        turn = 'X';
+                       
                     return true;
                 }
         return false;   // cell already taken

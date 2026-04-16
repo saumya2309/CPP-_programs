@@ -5,7 +5,6 @@
 
 ```
 #include <iostream>
-#include <vector>
 using namespace std;
 
 class Student {
@@ -16,7 +15,7 @@ private:
 
 public:
     // Default constructor
-    Student() : roll(0), name(""), marks{0,0,0} {}
+    Student() :roll(0), name(""), marks{0,0,0} {}
 
     // Parameterized constructor
     Student(int r, string n, float m[3]) {
